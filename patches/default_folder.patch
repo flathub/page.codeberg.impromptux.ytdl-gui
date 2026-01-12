@@ -1,0 +1,18 @@
+--- ./src/ytdl.cpp      2026-01-12 18:21:05.134087280 +0100
++++ ./src/ytdl.cpp      2026-01-12 18:26:24.262633440 +0100
+@@ -63,12 +63,13 @@
+     file_str = file_qstr.toUtf8().constData();
+ 
+     //Setup text
+-    QString downloads_dir = QStandardPaths::writableLocation(QStandardPaths::DownloadLocation);
++    QString downloads_dir = QStandardPaths::writableLocation(QStandardPaths::DownloadLocation) + "/VideoDownloader";
+     if (QDir(downloads_dir).exists()) {
+         ui->lineBrowse->setText(downloads_dir);
+     }
+     else {
+-        ui->lineBrowse->setText(QDir::homePath());
++        ui->lineBrowse->setText(QDir::homePath()+"/Download/VideoDownloader");
++        ytdl::browseAction();
+     }
+ 
+     connect(ui->buttonBrowse, &QPushButton::clicked, this, &ytdl::browseAction);
