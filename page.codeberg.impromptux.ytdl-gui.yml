@@ -163,7 +163,8 @@ modules:
 #          - patches/notifications.patch
 
       - type: file
-        path: page.codeberg.impromptux.ytdl-gui.metainfo.xml
+        url: https://codeberg.org/impromptux/ytdl-gui/raw/commit/0058270f0049badcffb36feaf69a2f59631c06ac/resources/flatpak/page.codeberg.impromptux.ytdl-gui.metainfo.xml
+        sha256: 2eaf02c88497a3ade3a2c56c30322d8b17e73b6cdb9b35cc46205b737df36aad
     post-install:
       - desktop-file-edit --set-key='Icon' --set-value='page.codeberg.impromptux.ytdl-gui' /app/share/applications/youtubedl-gui.desktop
       - desktop-file-edit --set-key='Exec' --set-value='youtubedl-gui' /app/share/applications/youtubedl-gui.desktop
