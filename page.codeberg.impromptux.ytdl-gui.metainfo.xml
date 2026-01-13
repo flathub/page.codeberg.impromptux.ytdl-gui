@@ -16,7 +16,6 @@
   </branding>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>AGPL-3.0-or-later</project_license>
-  <icon type="remote">https://codeberg.org/impromptux/ytdl-gui/raw/branch/master/icons/ytdl_logo.svg</icon>
   <description>
     <p>
       A simple-to-use tool to download videos or audios from various sources including Youtube, Dailymotion, Vimeo...
@@ -30,7 +29,7 @@
     </p>
   </description>
   
-  <launchable type="desktop-id">page.codeberg.impromptux.ytdl_gui.desktop</launchable>
+  <launchable type="desktop-id">page.codeberg.impromptux.ytdl-gui.desktop</launchable>
   <screenshots>
     <screenshot type="default">
       <image>https://codeberg.org/impromptux/ytdl-gui/raw/branch/master/resources/screenshot2.png</image>
