@@ -15,7 +15,7 @@
     <color type="primary" scheme_preference="dark">#1a5fb4</color>
   </branding>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>AGPL-3.0-or-later</project_license>
+  <project_license>GPL-3.0-or-later</project_license>
   <description>
     <p>
       A simple-to-use tool to download videos or audios from various sources including Youtube, Dailymotion, Vimeo...
