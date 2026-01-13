@@ -32,12 +32,12 @@
   <launchable type="desktop-id">page.codeberg.impromptux.ytdl-gui.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://codeberg.org/impromptux/ytdl-gui/raw/branch/master/resources/screenshot2.png</image>
+      <image>https://codeberg.org/impromptux/ytdl-gui/raw/commit/04407666f3187dfa68721f0285704d17060f7216/resources/screenshot2.png</image>
       <caption>The main window of the app. (Video tab)</caption>
       <caption xml:lang="fr">La fenêtre principale de l’application. (Onglet Vidéo)</caption>
     </screenshot>
     <screenshot>
-      <image>https://codeberg.org/impromptux/ytdl-gui/raw/branch/master/resources/screenshot1.png</image>
+      <image>https://codeberg.org/impromptux/ytdl-gui/raw/commit/04407666f3187dfa68721f0285704d17060f7216/resources/screenshot1.png</image>
       <caption>The main window of the app. (Audio tab)</caption>
       <caption xml:lang="fr">La fenêtre principale de l’application. (Onglet Audio)</caption>
     </screenshot>
