@@ -122,7 +122,7 @@ modules:
   - name: yt-dlp-ejs
     buildsystem: simple
     build-commands:
-        - pip3 install --prefix=/app "$(echo *.whl)"
+        - pip3 install --prefix=/app *.whl
     sources:
       - type: file
         url: 
