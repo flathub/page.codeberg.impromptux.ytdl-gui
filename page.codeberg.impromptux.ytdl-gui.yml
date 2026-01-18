@@ -135,7 +135,7 @@ modules:
   - name: yt-dlp
     buildsystem: simple
     build-commands:
-        - pip3 install --no-dependencies --prefix=/app "$(echo *.whl)[default]"
+        - pip3 install --no-dependencies --prefix=/app *.whl
     sources:
       - type: file
         url: 
