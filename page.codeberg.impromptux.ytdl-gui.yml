@@ -17,134 +17,125 @@ modules:
   - name: pyxattr
     buildsystem: simple
     build-commands:
-        - pip3 install --no-build-isolation --prefix=/app .
+      - pip3 install --no-build-isolation --prefix=/app .
     sources:
       - type: archive
         url: https://github.com/iustin/pyxattr/archive/refs/tags/v0.8.1.tar.gz
         sha256: ce7ef783e751b96610a6eb32fc49a89340b5dc575fbe15054ce7935ebaf49edb
         x-checker-data:
-            type: json
-            url: https://api.github.com/repos/iustin/pyxattr/releases/latest
-            version-query: .tag_name
-            url-query: '"https://github.com/iustin/pyxattr/archive/refs/tags/" + $version
-                + ".tar.gz"'
+          type: json
+          url: https://api.github.com/repos/iustin/pyxattr/releases/latest
+          version-query: .tag_name
+          url-query: '"https://github.com/iustin/pyxattr/archive/refs/tags/" + $version
+            + ".tar.gz"'
   - name: mutagen
     buildsystem: simple
     build-commands:
-        - pip3 install --no-build-isolation --prefix=/app .
+      - pip3 install --no-build-isolation --prefix=/app .
     sources:
       - type: archive
-        url: 
-            https://github.com/quodlibet/mutagen/archive/refs/tags/release-1.47.0.tar.gz
+        url: https://github.com/quodlibet/mutagen/archive/refs/tags/release-1.47.0.tar.gz
         sha256: f7489e19d375c31ba1962ab19e11eca8b9f86f05bfd99cef467f8dd875d8941e
         x-checker-data:
-            type: json
-            url: https://api.github.com/repos/quodlibet/mutagen/releases/latest
-            version-query: .tag_name
-            url-query: '"https://github.com/quodlibet/mutagen/archive/refs/tags/"
-                + $version + ".tar.gz"'
+          type: json
+          url: https://api.github.com/repos/quodlibet/mutagen/releases/latest
+          version-query: .tag_name
+          url-query: '"https://github.com/quodlibet/mutagen/archive/refs/tags/" +
+            $version + ".tar.gz"'
   - name: pycryptodomex
     buildsystem: simple
     build-commands:
-        - touch .separate_namespace
-        - pip3 install --no-build-isolation --prefix=/app .
+      - touch .separate_namespace
+      - pip3 install --no-build-isolation --prefix=/app .
     sources:
       - type: archive
-        url: 
-            https://github.com/Legrandin/pycryptodome/archive/refs/tags/v3.23.0.tar.gz
+        url: https://github.com/Legrandin/pycryptodome/archive/refs/tags/v3.23.0.tar.gz
         sha256: 5a905f0f4237b79aefee47f3e04568db2ecb70c55dd7cb118974c5260aa9e285
         x-checker-data:
-            type: json
-            url: https://api.github.com/repos/Legrandin/pycryptodome/tags
-            version-query: '[.[].name | select(test("^v?[0-9.]+$"))] | sort_by(sub("^v";
-                "") | split(".") | map(tonumber))[-1]'
-            url-query: '"https://github.com/Legrandin/pycryptodome/archive/refs/tags/"
-                + $version + ".tar.gz"'
+          type: json
+          url: https://api.github.com/repos/Legrandin/pycryptodome/tags
+          version-query: '[.[].name | select(test("^v?[0-9.]+$"))] | sort_by(sub("^v";
+            "") | split(".") | map(tonumber))[-1]'
+          url-query: '"https://github.com/Legrandin/pycryptodome/archive/refs/tags/"
+            + $version + ".tar.gz"'
   - name: websockets
     buildsystem: simple
     build-commands:
-        - pip3 install --no-build-isolation --prefix=/app .
+      - pip3 install --no-build-isolation --prefix=/app .
     sources:
       - type: archive
-        url: 
-            https://github.com/aaugustin/websockets/archive/refs/tags/15.0.1.tar.gz
-        sha256: 8451495265af3e368f794c4dc15c99ce90c771d95560f542bff8c64b5455af3b
+        url: https://github.com/aaugustin/websockets/archive/refs/tags/16.0.tar.gz
+        sha256: c720700d313af5d1c61372da62d78c5b6192ed09871367df65a8e1087b60b1f0
         x-checker-data:
-            type: json
-            url: https://api.github.com/repos/aaugustin/websockets/tags
-            version-query: '[.[].name | select(test("^v?[0-9.]+$"))] | sort_by(sub("^v";
-                "") | split(".") | map(tonumber))[-1]'
-            url-query: '"https://github.com/aaugustin/websockets/archive/refs/tags/"
-                + $version + ".tar.gz"'
+          type: json
+          url: https://api.github.com/repos/aaugustin/websockets/tags
+          version-query: '[.[].name | select(test("^v?[0-9.]+$"))] | sort_by(sub("^v";
+            "") | split(".") | map(tonumber))[-1]'
+          url-query: '"https://github.com/aaugustin/websockets/archive/refs/tags/"
+            + $version + ".tar.gz"'
   - name: brotli
     buildsystem: simple
     build-commands:
-        - pip3 install --no-build-isolation --prefix=/app .
+      - pip3 install --no-build-isolation --prefix=/app .
     sources:
       - type: archive
         url: https://github.com/google/brotli/archive/refs/tags/v1.2.0.tar.gz
         sha256: 816c96e8e8f193b40151dad7e8ff37b1221d019dbcb9c35cd3fadbfe6477dfec
         x-checker-data:
-            type: json
-            url: https://api.github.com/repos/google/brotli/releases/latest
-            version-query: .tag_name
-            url-query: '"https://github.com/google/brotli/archive/refs/tags/" + $version
-                + ".tar.gz"'
+          type: json
+          url: https://api.github.com/repos/google/brotli/releases/latest
+          version-query: .tag_name
+          url-query: '"https://github.com/google/brotli/archive/refs/tags/" + $version
+            + ".tar.gz"'
   - name: deno
     buildsystem: simple
     build-commands:
-        - install -Dt /app/bin deno
+      - install -Dt /app/bin deno
     sources:
       - type: archive
-        url: 
-            https://github.com/denoland/deno/releases/download/v2.6.4/deno-x86_64-unknown-linux-gnu.zip
-        sha256: 9100bbd0450c17b82002d3948bb8e7e1953c9e6506e63b586e2daa4042eca7f6
+        url: https://github.com/denoland/deno/releases/download/v2.6.5/deno-x86_64-unknown-linux-gnu.zip
+        sha256: e0f109b9ae6d828512bdbfc0524779ea42d7c117efd351860589c07506803436
         x-checker-data:
-            type: json
-            url: https://api.github.com/repos/denoland/deno/releases/latest
-            version-query: .tag_name
-            url-query: .assets[] | select(.name == 
-                "deno-x86_64-unknown-linux-gnu.zip").browser_download_url
+          type: json
+          url: https://api.github.com/repos/denoland/deno/releases/latest
+          version-query: .tag_name
+          url-query: .assets[] | select(.name == "deno-x86_64-unknown-linux-gnu.zip").browser_download_url
         only-arches:
-            - x86_64
+          - x86_64
       - type: archive
-        url: 
-            https://github.com/denoland/deno/releases/download/v2.6.4/deno-aarch64-unknown-linux-gnu.zip
-        sha256: dafb54c5454d7fcca81305215442e832e0c34e90b76a2e9a31d0676cbb06bfc6
+        url: https://github.com/denoland/deno/releases/download/v2.6.5/deno-aarch64-unknown-linux-gnu.zip
+        sha256: 6613f3ccfc7e36d91b1a856d0a3d3a6d1286d09a9f0d775f99e50706e0ebc81d
         x-checker-data:
-            type: json
-            url: https://api.github.com/repos/denoland/deno/releases/latest
-            version-query: .tag_name
-            url-query: .assets[] | select(.name == 
-                "deno-aarch64-unknown-linux-gnu.zip").browser_download_url
+          type: json
+          url: https://api.github.com/repos/denoland/deno/releases/latest
+          version-query: .tag_name
+          url-query: .assets[] | select(.name == "deno-aarch64-unknown-linux-gnu.zip").browser_download_url
         only-arches:
-            - aarch64
+          - aarch64
   - name: yt-dlp-ejs
     buildsystem: simple
     build-commands:
-        - pip3 install --prefix=/app *.whl
+      - pip3 install --prefix=/app *.whl
     sources:
       - type: file
-        url: 
-            https://files.pythonhosted.org/packages/9d/0d/1f0d7a735ca60b87953271b15d00eff5eef05f6118390ddf6f81982526ed/yt_dlp_ejs-0.3.2-py3-none-any.whl
+        url: https://files.pythonhosted.org/packages/9d/0d/1f0d7a735ca60b87953271b15d00eff5eef05f6118390ddf6f81982526ed/yt_dlp_ejs-0.3.2-py3-none-any.whl
         sha256: f2dc6b3d1b909af1f13e021621b0af048056fca5fb07c4db6aa9bbb37a4f66a9
         x-checker-data:
-            type: pypi
-            name: yt-dlp-ejs
-            packagetype: bdist_wheel
+          type: pypi
+          name: yt-dlp-ejs
+          packagetype: bdist_wheel
   - name: yt-dlp
     buildsystem: simple
     build-commands:
-        - pip3 install --no-dependencies --prefix=/app *.whl
+      - pip3 install --no-dependencies --prefix=/app *.whl
     sources:
       - type: file
-        url: 
-            https://files.pythonhosted.org/packages/6e/2f/98c3596ad923f8efd32c90dca62e241e8ad9efcebf20831173c357042ba0/yt_dlp-2025.12.8-py3-none-any.whl
+        url: https://files.pythonhosted.org/packages/6e/2f/98c3596ad923f8efd32c90dca62e241e8ad9efcebf20831173c357042ba0/yt_dlp-2025.12.8-py3-none-any.whl
         sha256: 36e2584342e409cfbfa0b5e61448a1c5189e345cf4564294456ee509e7d3e065
         x-checker-data:
-            type: pypi
-            name: yt-dlp
-            packagetype: bdist_wheel
+          type: pypi
+          name: yt-dlp
+          packagetype: bdist_wheel
 
   - name: youtubedl-gui
     buildsystem: cmake
@@ -158,7 +149,7 @@ modules:
           tag-pattern: (\d+\.\d+)
         disable-submodules: true
       - type: patch
-        paths: 
+        paths:
           - patches/default_folder.patch
 #          - patches/notifications.patch
 
@@ -166,6 +157,7 @@ modules:
         url: https://codeberg.org/impromptux/ytdl-gui/raw/commit/3995875896652772a4caf83de9ad7e3279010ce8/resources/flatpak/page.codeberg.impromptux.ytdl-gui.metainfo.xml
         sha256: 3d7775a8c1d17d6bcd3ff7e313e9b14ede182dfd842ecdf689032f935a4e9358
     post-install:
-      - desktop-file-edit --set-key='Icon' --set-value='page.codeberg.impromptux.ytdl-gui' /app/share/applications/youtubedl-gui.desktop
+      - desktop-file-edit --set-key='Icon' --set-value='page.codeberg.impromptux.ytdl-gui'
+        /app/share/applications/youtubedl-gui.desktop
       - desktop-file-edit --set-key='Exec' --set-value='youtubedl-gui' /app/share/applications/youtubedl-gui.desktop
       - install -D page.codeberg.impromptux.ytdl-gui.metainfo.xml -t /app/share/metainfo/
