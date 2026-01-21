@@ -1,0 +1,11 @@
+--- ./src/main.cpp	2026-01-21 20:19:04.101832294 +0100
++++ ./src/main.cpp	2026-01-21 20:18:51.841723723 +0100
+@@ -19,7 +19,7 @@
+     mainActions q;
+     QCoreApplication::setApplicationName(QString("Youtube Downloader"));
+     w.setWindowTitle( QCoreApplication::applicationName() );
+-    w.setWindowIcon(QIcon::fromTheme("youtubedl-gui"));
++    w.setWindowIcon(QIcon::fromTheme("page.codeberg.impromptux.ytdl-gui"));
+     w.show();
+     return a.exec();
+ }
