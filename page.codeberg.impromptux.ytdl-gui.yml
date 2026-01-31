@@ -142,7 +142,7 @@ modules:
     sources:
       - type: git
         url: https://codeberg.org/impromptux/ytdl-gui.git
-        commit: 44dc233defe9583c80aa79d91d14d5e7f880a226
+        commit: 561bff2fcb31551338da9467e0ae7de4e7b67299
         x-checker-data:
           type: git
           tag-pattern: (\d+\.\d+)
@@ -153,8 +153,8 @@ modules:
           - patches/icon.patch
 
       - type: file
-        url: https://codeberg.org/impromptux/ytdl-gui/raw/commit/778276005e516de9a5f6a9d09477cefc1746e25b/resources/flatpak/page.codeberg.impromptux.ytdl-gui.metainfo.xml
-        sha256: 8a7f5fef3cffeb13899be34855200ae9bb1ed7c4ac9611ff8c426a9c43168537
+        url: https://codeberg.org/impromptux/ytdl-gui/raw/commit/561bff2fcb31551338da9467e0ae7de4e7b67299/resources/flatpak/page.codeberg.impromptux.ytdl-gui.metainfo.xml
+        sha256: c022b9fe11b706304d4cc71c3c08b50b24df408a70ea2a6daee4bcc00f27054c
     post-install:
       - desktop-file-edit --set-key='Icon' --set-value='page.codeberg.impromptux.ytdl-gui'
         /app/share/applications/youtubedl-gui.desktop
