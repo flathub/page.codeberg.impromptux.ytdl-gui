@@ -142,7 +142,7 @@ modules:
     sources:
       - type: git
         url: https://codeberg.org/impromptux/ytdl-gui.git
-        commit: 713777c9e9d12f236b28d784e219d74d3aa3829f
+        commit: b5cfcbd5eb672f3c6f3cbf615c90494e378d8954
         x-checker-data:
           type: git
           tag-pattern: (\d+\.\d+)
