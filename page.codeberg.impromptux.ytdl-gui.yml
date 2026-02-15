@@ -156,4 +156,3 @@ modules:
             -t /app/share/metainfo/
     post-install:
       - desktop-file-edit --set-key='Exec' --set-value='youtubedl-gui' /app/share/applications/page.codeberg.impromptux.ytdl-gui.desktop
-
