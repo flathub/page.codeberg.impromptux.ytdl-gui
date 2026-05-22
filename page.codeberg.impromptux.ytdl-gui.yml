@@ -93,8 +93,8 @@ modules:
       - install -Dt /app/bin deno
     sources:
       - type: archive
-        url: https://github.com/denoland/deno/releases/download/v2.7.13/deno-x86_64-unknown-linux-gnu.zip
-        sha256: d7b452de2578742889b70a7e3cf90eb14b8e6b1bca4758380da3630d694f04ff
+        url: https://github.com/denoland/deno/releases/download/v2.8.0/deno-x86_64-unknown-linux-gnu.zip
+        sha256: be2c8b53c8ca1d66be76feb9b1a524419da708b00d4ca074cf5c633c81c1627b
         x-checker-data:
           type: json
           url: https://api.github.com/repos/denoland/deno/releases/latest
@@ -103,8 +103,8 @@ modules:
         only-arches:
           - x86_64
       - type: archive
-        url: https://github.com/denoland/deno/releases/download/v2.7.13/deno-aarch64-unknown-linux-gnu.zip
-        sha256: c017fa8389bd96b6b07b3416bdb8d37074ab2ff1c83a9c94f7b2a6a7da026dac
+        url: https://github.com/denoland/deno/releases/download/v2.8.0/deno-aarch64-unknown-linux-gnu.zip
+        sha256: 933a6a7d2985957271cd2085a5a5a1832398aa221a354daab5635196cf2cbbae
         x-checker-data:
           type: json
           url: https://api.github.com/repos/denoland/deno/releases/latest
