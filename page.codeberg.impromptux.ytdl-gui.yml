@@ -64,8 +64,8 @@ modules:
       - pip3 install --no-build-isolation --prefix=/app .
     sources:
       - type: archive
-        url: https://github.com/aaugustin/websockets/archive/refs/tags/16.0.tar.gz
-        sha256: c720700d313af5d1c61372da62d78c5b6192ed09871367df65a8e1087b60b1f0
+        url: https://github.com/aaugustin/websockets/archive/refs/tags/17.0.tar.gz
+        sha256: d01117def2bf1415adb44da34f08fc0ce217d76ce88177a307dbb31525de61c7
         x-checker-data:
           type: json
           url: https://api.github.com/repos/aaugustin/websockets/tags
@@ -93,8 +93,8 @@ modules:
       - install -Dt /app/bin deno
     sources:
       - type: archive
-        url: https://github.com/denoland/deno/releases/download/v2.9.0/deno-x86_64-unknown-linux-gnu.zip
-        sha256: 96c9c73fc05ea57603bc28d8071d41e861bd40bcf2a9f849dd5969ed1a2c8498
+        url: https://github.com/denoland/deno/releases/download/v2.9.4/deno-x86_64-unknown-linux-gnu.zip
+        sha256: c24f955d9fbfe0ea5ae2b501c8e71ae76e31e4c9782390a54a284b3364fda725
         x-checker-data:
           type: json
           url: https://api.github.com/repos/denoland/deno/releases/latest
@@ -103,8 +103,8 @@ modules:
         only-arches:
           - x86_64
       - type: archive
-        url: https://github.com/denoland/deno/releases/download/v2.9.0/deno-aarch64-unknown-linux-gnu.zip
-        sha256: a0f266eb189af2f27db0c6dcf9eb2f68ba2e8bbff1442c969ace398463f8b2bf
+        url: https://github.com/denoland/deno/releases/download/v2.9.4/deno-aarch64-unknown-linux-gnu.zip
+        sha256: 111da5c05c240cfdc4340f234a0e3539d39dbcb6755221f19dcd60bacc8be5aa
         x-checker-data:
           type: json
           url: https://api.github.com/repos/denoland/deno/releases/latest
@@ -130,8 +130,8 @@ modules:
       - pip3 install --no-dependencies --prefix=/app *.whl
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/f3/ee/188a3dadf9dfdac713243521f919feca1cd091d4358c9ea7e8ebb710a7cc/yt_dlp-2026.6.9-py3-none-any.whl
-        sha256: 442ba4c75724b9496144c8434b617962ee08d0ee7c26ec663848fe9b78d5a3e4
+        url: https://files.pythonhosted.org/packages/f9/8a/cd4c9b02c10c563adfe78118310129641900e1cd6de888cfae2452072696/yt_dlp-2026.7.4-py3-none-any.whl
+        sha256: f11f2b11d5a8ac4059f9bdf29fa4407dc7c6bb00c5097e95ca22a7a9db518266
         x-checker-data:
           type: pypi
           name: yt-dlp
