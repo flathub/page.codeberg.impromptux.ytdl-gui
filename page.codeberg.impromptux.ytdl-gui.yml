@@ -64,8 +64,8 @@ modules:
       - pip3 install --no-build-isolation --prefix=/app .
     sources:
       - type: archive
-        url: https://github.com/aaugustin/websockets/archive/refs/tags/17.3.tar.gz
-        sha256: f80496c1d689e629c184055e15e27734251c7214841d486428c15bed185162ee
+        url: https://github.com/aaugustin/websockets/archive/refs/tags/17.4.tar.gz
+        sha256: 80563c93e613e1ef6b579de346b405019be300b73c22f8dae7cfc79067492ddf
         x-checker-data:
           type: json
           url: https://api.github.com/repos/aaugustin/websockets/tags
@@ -93,7 +93,8 @@ modules:
       - install -Dt /app/bin deno
     sources:
       - type: archive
-        url: https://github.com/denoland/deno/releases/download/v2.9.8/deno-x86_64-unknown-linux-gnu.zip
+        url: 
+          https://github.com/denoland/deno/releases/download/v2.9.8/deno-x86_64-unknown-linux-gnu.zip
         sha256: e890975bc2549807bbcc0b584ffafda72cc7c93349dd99c80483dd784f6c4609
         x-checker-data:
           type: json
@@ -103,7 +104,8 @@ modules:
         only-arches:
           - x86_64
       - type: archive
-        url: https://github.com/denoland/deno/releases/download/v2.9.8/deno-aarch64-unknown-linux-gnu.zip
+        url: 
+          https://github.com/denoland/deno/releases/download/v2.9.8/deno-aarch64-unknown-linux-gnu.zip
         sha256: d49596c20b9788cf8f5d8ddf644103d4bde56ed239753f0bdb92ba9361d51905
         x-checker-data:
           type: json
@@ -118,7 +120,8 @@ modules:
       - pip3 install --prefix=/app *.whl
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/e3/bd/520769863744b669440a924271a6159ddd82ad5ae26b4ac4d4b69e9f8d44/yt_dlp_ejs-0.8.0-py3-none-any.whl
+        url: 
+          https://files.pythonhosted.org/packages/e3/bd/520769863744b669440a924271a6159ddd82ad5ae26b4ac4d4b69e9f8d44/yt_dlp_ejs-0.8.0-py3-none-any.whl
         sha256: 79300e5fca7f937a1eeede11f0456862c1b41107ce1d726871e0207424f4bdb4
         x-checker-data:
           type: pypi
@@ -130,7 +133,8 @@ modules:
       - pip3 install --no-dependencies --prefix=/app *.whl
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/7f/3d/16ea7d5638cf585991f2c5705e8083688dde633d32d0871f2404e0f4d827/yt_dlp-2026.10.26-py3-none-any.whl
+        url: 
+          https://files.pythonhosted.org/packages/7f/3d/16ea7d5638cf585991f2c5705e8083688dde633d32d0871f2404e0f4d827/yt_dlp-2026.10.26-py3-none-any.whl
         sha256: a05c5b5d8562f7e8a62f5334348b406af4930d56d3a65f8021d14af0e22339ae
         x-checker-data:
           type: pypi
