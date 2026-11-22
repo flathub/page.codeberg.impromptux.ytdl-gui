@@ -145,7 +145,7 @@ modules:
         commit: 6cda34830c339634d194cc0a05e2cd30c49012aa
         x-checker-data:
           type: git
-          tag-pattern: (\d+\.\d+)
+          tag-pattern: '^v(\d+(?:\.\d+)+)$'
         disable-submodules: true
       - type: patch
         paths:
